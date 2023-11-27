@@ -1,0 +1,179 @@
+body{
+    font-family:Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #70b88c, #06355c);
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.8); 
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Alinea los elementos a la izquierda y empuja los elementos de la derecha hacia la derecha */
+}
+
+.hospital-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url('img/logoG.png');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.hospital-name {
+    font-weight: bold;
+    margin-right: 10px; /* Añade un pequeño margen entre la imagen y el nombre */
+}
+
+.hospital-background::after {
+    content: "";
+    background: inherit;
+    opacity: 0.5; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown button {
+    background-color: rgba(112, 184, 148, 0.719); /* Color azul para el botón */
+    border: 2px solid #7097b8; /* Borde más grueso y color más oscuro */
+    color: white; /* Color de texto blanco */
+    padding: 10px 15px; /* Ajusta el espaciado interno del botón */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; /* Ajusta el espaciado entre botones */
+}
+
+/* Aplica un margen derecho mayor al último botón */
+.last-dropdown {
+    margin-right: 60px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 16px;
+    background-color: rgba(73, 150, 114, 0.733);
+    color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(53, 167, 78, 0.671);
+}
+
+
+
+
+/* Estilos para secciones */
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    margin: 0;
+}
+
+
+.doctor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.doctor img {
+    max-width: 100%;
+    max-height: 200px; 
+    border-radius: 80%;
+}
+
+footer {
+    position: relative; 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    background-position: right bottom; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverFondo 10s linear infinite;
+}
+
+
+footer::before {
+    content: "";
+    background-image: url('ambulancia.png'); 
+    background-size: 40px auto; 
+    width: 40px; 
+    height: 40px; 
+    position: absolute; 
+    right: 10px;
+    bottom: 10px; 
+    animation: moverGIF 8s linear infinite; 
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 100% 100%; 
+    }
+}
+
+
+@keyframes moverGIF {
+    0% {
+        left: calc(100% - 40px); 
+    }
+    100% {
+        left: 0; 
+    }
+}
+
