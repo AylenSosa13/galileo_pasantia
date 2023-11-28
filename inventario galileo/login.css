@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 2s ease-in-out;
+    background-image: url(juan.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+    
+.login-container {
+background-color: #12682cd3;
+padding: 40px;
+border-radius: 10px;
+text-align: left;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+margin-bottom: 20px;
+}
+
+.login-container label {
+display: block;
+margin-bottom: 5px;
+}
+
+.login-container input {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.login-container button {
+padding: 10px 20px;
+background-color: rgba(50, 216, 133, 0.692);
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.login-container button:hover {
+background-color: rgb(8, 75, 17)
+}
+
+.boton{
+padding: 10px;
+margin: 0px 0px 10px;
+}
