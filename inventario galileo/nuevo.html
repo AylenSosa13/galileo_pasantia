@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head><!--encabezdo-->
+    <title>Nuevo Producto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bost.css">
+    <link rel="stylesheet" href="estilonuevo.css"><!--linck a la pagina de css-->
+    <link rel="shortcut icon" href="logoG.png"><!--linck para la imagen de la pestaña-->
+</head>
+<body style="background-image: url(gris.jpg);margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;padding-left: 0px;"> <!--cuerpo-->
+    <nav style="display: flex;justify-content: space-between;align-items: center;background-color: rgba(255, 255, 255, 0.8);padding: 10px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);position: fixed; top: 0; left: 0;right: 0; z-index: 100;"><!--------------------------------------------navar----------------------------------------------------------------------->
+        <div style="background-image: url('./img/logoG.png');width: 40px;height: 40px;background-size: cover;margin-left: 10px;" class="navbar">
+            <div class="navbar-left">
+                <div style="padding-left: 30px;width: 968px;font-weight: bold;"class="hospital-name">Inventario Galileo - Nuevo Producto</div><div>
+                <div class="hospital-icon"></div><!--logo de galileo--></div> 
+    </nav><!----------------------------------------------------------------------------------------------------------------------->
+    <div class="container" style="background-color:#0a5f2373;">
+        <h1 style="font-weight: bold" class="text-center">Nuevo Producto</h1>
+        <form action="guardar_nuevo.php" method="POST" enctype="multipart/form-data" class="formulario">
+            <div class="form-group">
+                <label for="nombre_del_producto">Nombre del producto:</label>
+                <input type="text" REQUIRED name="nombre_del_producto" class="form-control" id="nombre_del_producto" placeholder="Nombre del producto...">
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripcion:</label>
+                <input type="text" REQUIRED name="descripcion" class="form-control" id="descripcion" placeholder="Descripcion...">
+            </div>
+            <div class="form-group">
+                <label for="fecha_de_la_compra">Fecha de la compra:</label>
+                <input type="date" REQUIRED name="fecha_de_la_compra" class="form-control" id="fecha_de_la_compra">
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" REQUIRED name="cantidad" class="form-control" id="cantidad" placeholder="Cantidad...">
+            </div>
+            <div class="form-group">
+                <label for="precio_peso_ARG">Precio peso ARG:</label>
+                <input type="text" REQUIRED name="precio_peso_ARG" class="form-control" id="precio_peso_ARG" placeholder="Precio peso ARG...">
+            </div>
+            <div class="form-group">
+                <label for="precio_dolar">Precio dolar:</label>
+                <input type="text" REQUIRED name="precio_dolar" class="form-control" id="precio_dolar" placeholder="Precio dolar...">
+            </div>
+            <div class="form-group">
+                <label for="IVA">IVA:</label>
+                <input type="text" REQUIRED name="IVA" class="form-control" id="IVA" placeholder="IVA...">
+            </div>
+            <div class="form-group">
+                <label for="fecha_actualizacion_precio">Fecha de actualizacion del precio:</label>
+                <input type="date" REQUIRED name="fecha_actualizacion_precio" class="form-control" id="fecha_actualizacion_precio">
+            </div>
+            <div class="form-group">
+                <label for="proveedor">Proveedor:</label>
+                <input type="text" REQUIRED name="proveedor" class="form-control" id="proveedor" placeholder="Proveedor...">
+            </div>
+            <button type="submit" class="btn btn-danger" style="background-color: rgba(12, 39, 12, 0.644);border-color: rgba(18, 44, 14, 0.719);">Aceptar</button>
+        </form>
+    </div>
+</body>
+</html>
